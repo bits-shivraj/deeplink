@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Open My App</title>
+    <script>
+        function openApp() {
+            window.location.href = "myapp://share/1234"; // Change this to your deep link
+            setTimeout(function() {
+                window.location.href = "https://play.google.com/store/apps/details?id=com.shivraj.ipv6"; // Fallback to Play Store
+            }, 2000);
+        }
+    </script>
+</head>
+<body onload="openApp()">
+    <h2>Opening My App...</h2>
+    <p>If the app does not open, <a href="myapp://share/1234">click here</a>.</p>
+</body>
+</html>
